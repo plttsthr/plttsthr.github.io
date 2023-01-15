@@ -52,7 +52,11 @@ nav ul li a:hover{
     transition: .4s;
 }
 
-
+body{
+    min-width:800px;        /* Suppose you want minimum width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+          /* As IE6 ignores !important it will set width as 1000px; */
+ }
 
 .body{
     width: 100%;
