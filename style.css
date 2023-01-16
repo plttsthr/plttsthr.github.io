@@ -36,7 +36,7 @@
 .gg-terminal::after {
  width: 4px;
  height: 2px;
- background: currentColor;
+ background: white;
  top: 10px;
  left: 11px
 } 
