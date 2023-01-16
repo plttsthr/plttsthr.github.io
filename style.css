@@ -4,45 +4,8 @@
     font-family: 'Sofia Sans', sans-serif;
 }
 
- .gg-terminal {
- box-sizing: border-box;
- position: relative;
- display: block;
- transform: scale(var(--ggs,1));
- width: 24px;
- height: 20px;
- border: 2px solid;
- border-radius: 2px
-}
-
-.gg-terminal::after,
-.gg-terminal::before {
- content: "";
- display: block;
- box-sizing: border-box;
- position: absolute
-}
-
-.gg-terminal::before {
- border-right: 2px solid;
- border-bottom: 2px solid;
- transform: rotate(-45deg);
- width: 6px;
- height: 6px;
- top: 5px;
- left: 3px
-}
-
-.gg-terminal::after {
- width: 4px;
- height: 2px;
- background: white;
- top: 10px;
- left: 11px
-} 
-
 .header{
-    height: 100px;
+    height: 120px;
     width: 100%;
     background-color: black;
     background-position: center;
@@ -55,22 +18,84 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
-    padding-left: 8%;
+    padding-left: 2%;
     padding-right: 8%;
 }
 
 .logo{
-    color: white;
+    color: #a68db1;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
+    border: 3px solid  #5D4A66;
+    border-radius: 1px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    width:190px;
+    padding:5px 5px;
+    transition:all 1s;
+    
+    
+}
+
+.logo h2{
+    margin: 5px 5px 5px 5px;
 }
 
 .logo:hover{
     transform: translateY(-25%);
     transition: ease-out .3s;
+    
+
 
 }
+
+.loader{
+
+    --point-color: rgb(255, 255, 255);
+    --size: 5.5px;
+  }
+  
+  .loader {
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+
+  }
+  
+  .loader__element {
+    border-radius: 100%;
+    border: var(--size) solid var(--point-color);
+    margin: calc(var(--size)*2);
+  }
+  
+  .loader__element:nth-child(1) {
+    animation: preloader .6s ease-in-out alternate infinite;
+    --point-color: #5D4A66;
+  }
+  .loader__element:nth-child(2) {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+    --point-color: #749C75;
+  }
+  
+  .loader__element:nth-child(3) {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+    --point-color: #E9D985;
+  }
+  
+  @keyframes preloader {
+    100% { transform: scale(2); }
+  }
+
+
+
 
 nav ul li{
     list-style: none;
@@ -79,21 +104,17 @@ nav ul li{
 }
 
 nav ul li a{
-    color: whitesmoke;
+    color:  #E9D985;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover{
-    color:  rgb(209, 62, 96);
+    color:  #749C75;
     transition: .4s;
 }
 
-body{
-    min-width:800px;        /* Suppose you want minimum width of 1000px */
-    width: auto !important;  /* Firefox will set width as auto */
-          /* As IE6 ignores !important it will set width as 1000px; */
- }
+
 
 .body{
     width: 100%;
@@ -104,16 +125,23 @@ body{
 }
 
 
+body{
+    min-width:800px;        /* Suppose you want minimum width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+          /* As IE6 ignores !important it will set width as 1000px; */
+ }
+
 .body h4{
 
-    color: rgb(209, 62, 96);
+    color:  #749C75;
     font-size: 25px;
     letter-spacing: 1px;
     text-align: left;
     padding: 10px 30px;
 
-
 }
+
+
 
 .body p{
 
@@ -121,7 +149,7 @@ body{
     letter-spacing: 1px;
     text-align: left;
     padding: 10px 30px;
-    margin-bottom: 500px;
+    margin-bottom: 300px;
 
 
 }
@@ -137,7 +165,7 @@ body{
 
 .title h2{
 
-    color: rgb(209, 62, 96);
+    color:  #749C75;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
@@ -207,7 +235,6 @@ body{
     text-align: center;
     
 }
-
 
 
 .three{
