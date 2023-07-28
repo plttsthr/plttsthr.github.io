@@ -89,7 +89,7 @@ nav{
     border-radius: 1px;
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
-    width: 35px;
+    width: 80px;
     padding: 10px 5px;
     transition:all 1s;
     
@@ -101,8 +101,6 @@ nav{
 .logo:hover{
     transform: translateX(5%);
     transition: ease-out .3s;
-    
-
 
 }
 
@@ -133,7 +131,7 @@ nav ul li a{
 
 nav ul li a:hover{
 
-    color:  #FFD271;
+    color:  #39d8ed;
     transition: .4s;
 }
 
@@ -185,9 +183,9 @@ body{      /* Suppose you want minimum width of 1000px */
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
     text-align: center;
-    padding: 10px 30px;
-    font-size: 20px;
-    margin-bottom: 200px;
+    padding: 10px 70px;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 
@@ -287,13 +285,12 @@ body{      /* Suppose you want minimum width of 1000px */
 }
 
 .icon-linkedin{
-
+    
     height: 30px;
     width: 30px;
     padding-left: 100px;
     padding-right: 20px;
     float: left;
-
 }
 
 .icon-mail{
@@ -306,7 +303,23 @@ body{      /* Suppose you want minimum width of 1000px */
 }
 
 
+.icon-profile{
 
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid #F65C78;
+
+}
+
+.icon-profile:hover{
+    transform: translateX(3%) ;
+    transition: ease-out .3s;
+
+}
 
 
 .icon-git{
