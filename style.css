@@ -89,7 +89,7 @@ nav{
     border-radius: 1px;
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
-    width: 80px;
+    width: 30px;
     padding: 10px 5px;
     transition:all 1s;
     
@@ -303,15 +303,17 @@ body{      /* Suppose you want minimum width of 1000px */
 }
 
 
+
+
 .icon-profile{
 
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    border: 5px solid #F65C78;
+
 
 }
 
@@ -326,6 +328,15 @@ body{      /* Suppose you want minimum width of 1000px */
 
     height: 30px;
     width: 30px;
+    padding-left: 100px;
+    padding-right: 20px;
+    float: left;
+}
+
+.skills{
+
+    height: 40px;
+    width: 40px;
     padding-left: 100px;
     padding-right: 20px;
     float: left;
