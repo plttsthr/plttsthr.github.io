@@ -219,7 +219,7 @@ body{      /* Suppose you want minimum width of 1000px */
     background-color:  rgb(21, 21, 21);
     background-position: center;
     padding-bottom: 20px;
-    padding-top: 350px;
+    padding-top: 500px;
 
 
 }
@@ -337,9 +337,21 @@ body{      /* Suppose you want minimum width of 1000px */
 
     height: 40px;
     width: 40px;
-    padding-left: 100px;
-    padding-right: 20px;
-    float: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: auto;
+}
+
+.Skills-List{
+
+    background-color:  rgb(185, 16, 16);
+    padding-top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Skills-List h3{ 
+    color: #ffffff;
 }
 
 .Info h11:hover{
