@@ -202,11 +202,14 @@ p{
 
 
 .navbar-nav .nav-link {
-    color: rgb(0, 0, 0);;
+    color: rgb(0, 0, 0);
+    padding-left: 5px;
 }
 
 .navbar-nav .nav-link:hover {
     color: #dd20af;
+    border-top: 2px solid #dd20af;
+    border-left: 2px solid #dd20af;
 }
 
 .navbar-nav .nav-link.active::after {
@@ -328,7 +331,7 @@ p{
   /* Ticker tape */
   .ticker-tape {
     --direction: normal;
-    --duration: 35s;
+    --duration: 15s;
     --delay: 0s;
     --iteration-count: infinite;
     --play: running;
