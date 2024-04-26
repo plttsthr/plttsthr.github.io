@@ -1,0 +1,364 @@
+.cabin-condensed-regular {
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cabin-condensed-medium {
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .cabin-condensed-semibold {
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .cabin-condensed-bold {
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  
+  *{
+    font-family: "Cabin Condensed", sans-serif;
+  }
+
+
+
+header{
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 5rem;
+    color: #dd20af;
+    font-weight: bold;
+    
+}
+
+h2{
+    font-size: 3.5rem;
+    color: #dd20af;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 2.2rem;
+    color: rgb(0, 0, 0);
+}
+
+h4{
+    font-size: 18px;
+    color: #20dbdd;
+}
+
+
+p{
+    color: #000000;
+    font-size: 20px;
+}
+
+#about{
+    background-color: #000000;
+}
+
+#projects{
+    background-color: #ffffff;
+    padding-top: 300px;
+    
+}
+
+.card-title{
+    color: #c8dd20;
+}
+
+.card.border-black {
+    border-radius: 0;
+    border: 5px solid black;
+}
+
+
+.text-container {
+    padding-right: 100px; /* Adjust as needed */
+}
+.horizontal-line {
+    position: relative;
+    height: .5px; /* Adjust line height as needed */
+    width: 100%;
+    background-color: rgb(180, 35, 35);
+    z-index: 999; /* Ensure lines are above other content */
+}
+
+.active {
+    display: block; /* Show lines when activated */
+}
+
+.left-to-right {
+    animation: moveLeftToRight 5s linear forwards;
+}
+
+.right-to-left {
+    animation: moveRightToLeft 5s linear forwards;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+}
+
+.overlay-pink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6f2024bf;
+    z-index: 0;
+}
+
+.bkg-pink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6f2024bf;
+    z-index: 0;
+}
+
+.overlay-green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #373e10b9;
+    z-index: 0;
+}
+
+#name {
+
+    color: #ffffff;
+    border-right: 2px solid #ffffff; /* Typewriter cursor effect */
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden; /* Hide overflow text */
+
+  }
+  
+
+
+.card-img-top{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.logo{
+    width: 50px;
+    height: 60px;
+    object-fit:fill;
+}
+
+.section-container{
+    background-color: #000000;
+    position: relative;
+    
+}
+
+
+
+.navbar-brand{
+    color: transparent;
+}
+
+
+.navbar-nav .nav-link {
+    color: rgb(0, 0, 0);;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dd20af;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin: auto; 
+    width: 100%; 
+}
+
+.navbar-nav .nav-link.active {
+    color: white !important;
+}
+
+.offcanvas-body {
+    background-color:  #ffffff;
+    border-bottom: 2px solid #000000;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    color: #ffffff;
+}
+
+.navbar-toggler:hover {
+    color: transparent;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    color: transparent;
+}
+
+.form-control {
+    padding-right: 30px;
+    border-radius: 0px;
+    border: none;
+}
+
+.form-control:focus {
+    border-color: initial;
+    box-shadow: none;
+}
+
+.search-bar {
+    border-radius: 20px; 
+    border: none;
+    background-color: #ffffff;
+}
+
+.search-input {
+    border-radius: 20px;
+    border: none; 
+    box-shadow: none;
+    padding-right: 0; 
+}
+
+.form-control::placeholder {
+    color: #a5a4a4;
+    font-size: smaller;
+}
+
+.btn-banner{
+    border-radius: 40px;
+    border: 2px solid  #962D32;
+    color: white;
+    font-weight: bold;
+    background-color: #962D32;
+    text-wrap: nowrap;
+    max-width: 100%;
+}
+
+.btn-banner:hover{
+    background-color: #772328;
+    border: 2px solid  #772328;transition: all 0.3s ease;
+}
+
+#btn-light-round-corners {
+    border: 2px solid #d7d7d7;
+    background-color: transparent;
+    color: #d7d7d7;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    padding: 8px 8px;
+}
+
+#btn-light-round-corners:hover {
+
+    color: #000000;
+    border-color: #e7dc18;
+}
+
+
+#btn-light-round-header {
+    border: 3px solid #000000;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+#btn-light-round-header:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #dd20af;
+}
+
+/* Ticker tape container */
+.ticker-tape-container {
+    overflow-x: hidden;
+    display: flex;
+  }
+  
+  /* Ticker tape */
+  .ticker-tape {
+    --direction: normal;
+    --duration: 35s;
+    --delay: 0s;
+    --iteration-count: infinite;
+    --play: running;
+  
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+    flex: 0 0 auto;
+    align-items: center;
+    animation: marquee var(--duration) linear var(--delay) var(--iteration-count);
+    animation-play-state: var(--play);
+    animation-delay: var(--delay);
+    animation-direction: var(--direction);
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .ticker-item{
+    font-size: 1.8rem;
+
+  }
+
+
+
+
+  
